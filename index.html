@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#123b70">
+  <title>Verbo Crianças</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div id="logo-h"></div>
+      <nav class="tabs" aria-label="Escolha o app">
+        <button type="button" id="tab-pais" data-view="pais" aria-pressed="true">App dos pais</button>
+        <button type="button" id="tab-tias" data-view="tias" aria-pressed="false">App das tias</button>
+        <button type="button" id="tab-gestao" data-view="gestao" aria-pressed="false">Gestão</button>
+        <button type="button" id="tab-visitante" data-view="visitante" aria-pressed="false">Visitante (QR)</button>
+      </nav>
+    </header>
+    <main id="app"></main>
+    <p class="foot">Aprender. Adorar. Crescer com Jesus.</p>
+  </div>
+  <div id="layer"></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
